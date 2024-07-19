@@ -226,9 +226,9 @@
 
     if(res == 1 && imgBase64 != "文件不存在" && imgBase64 != "图片文件转换异常"){
         imgBase64 = imgBase64.replace("[","").replace("]","").split(",");
-        for(var i=0; i < imgBase64.length; i ++){
+        for(var i=0; i < 3; i ++){
             var dom = '<div class="swiper-slide">'+
-                '<div class="certificateImg1"><img src="data:image/jpeg;base64,'+ imgBase64[i].replaceAll("\"","") +'"/></div>'+
+                '<div class="certificateImg1"><img src="1.jpg"/></div>'+
                 '</div>'
             $('#mySwiper').append(dom);
         }
