@@ -226,12 +226,18 @@
 
     if(res == 1 && imgBase64 != "文件不存在" && imgBase64 != "图片文件转换异常"){
         imgBase64 = imgBase64.replace("[","").replace("]","").split(",");
-        for(var i=0; i < 3; i ++){
-            var dom = '<div class="swiper-slide">'+
-                '<div class="certificateImg1"><img src="1.jpg"/></div>'+
-                '</div>'
-            $('#mySwiper').append(dom);
-        }
+        var dom = '<div class="swiper-slide">'+
+            '<div class="certificateImg1"><img src="1.jpg"/></div>'+
+	    '</div>'
+        $('#mySwiper').append(dom);
+        dom = '<div class="swiper-slide">'+
+            '<div class="certificateImg1"><img src="2.jpg"/></div>'+
+	    '</div>'
+        $('#mySwiper').append(dom);
+        dom = '<div class="swiper-slide">'+
+            '<div class="certificateImg1"><img src="3.jpg"/></div>'+
+	    '</div>'
+        $('#mySwiper').append(dom);
         $("#valid").removeClass("disNone");
         $("#invalid").addClass("disNone")
     }else{
